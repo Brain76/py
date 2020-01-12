@@ -1,0 +1,95 @@
+# name_of_person = 'Анастасия'
+# print(name_of_person[::-1])
+
+# email = 'welcome@mail.ru'
+# index = email.find('@')
+# print(index)
+# print(email[:index])
+
+# name = 'ПетрОв иВаноВ'
+# print(name.lower())
+# print(name.upper())
+# print(name.capitalize())
+# print(name.title())
+# print(len(name))
+# print(name.count('о'))
+# print(name.title().split())
+# print(name.ljust(1,'о'))
+
+# name = 'Ivan'
+# age = 30
+# money = 200.2
+# result = f'Hello {name} вам {age} лет у вас {money}'
+# print(result)
+
+# name = 'Sergey'
+# humans = ['Ivan', 'Alex', 'Olga', name]
+# # humans[0] = 'Nastya'
+# # humans.append('10')
+#
+# print(humans)
+
+# x = [1, 2, 3, ['qwe', 'asd']]
+# print(x[3][1])
+# from typing import Tuple
+
+# Задача-1:
+# Дан список фруктов.
+# Напишите программу, выводящую фрукты в виде нумерованного списка,
+# выровненного по правой стороне.
+
+# Пример:
+# Дано: ["яблоко", "банан", "киви", "арбуз"]
+# Вывод:
+# 1. яблоко
+# 2.  банан
+# 3.   киви
+# 4.  арбуз
+
+
+# fruits = ["яблоко", "банан", "киви", "арбуз"]
+# a = 1
+# lenthmax = 0
+# for i in fruits:
+#     lenth1 = len(i)
+#     if lenthmax < lenth1:
+#         lenthmax = lenth1
+# for i in fruits:
+#     t = f'{a}. {i.rjust(lenthmax)}'
+#     print(t)
+#     a = a + 1
+
+# human = {'name': 'Ilya', 'age': 43, 'money': 200}
+# human['data'] = [1, 2, 3, 4, 5]
+# print(human['name'])
+#
+# my_list = [1,1,1,1,12,2,2,3,3,3,34,45,6,5,4,5,6]
+# print(my_list)
+# print(set(my_list))
+# print(len(set(my_list)))
+
+# a = {1, 2, 3}
+# b = {3, 4, 5}
+# print(a | b)
+
+# Задача-2:
+# Даны два произвольные списка.
+# Удалите из первого списка элементы, присутствующие во втором списке.
+# a = [1, 2, 3, 4]
+# b = [3, 4, 5, 6, 7]
+# c = set(a) | set(b)
+# print(c)
+
+# Задача-3:
+# Дан произвольный список из целых чисел.
+# Получите НОВЫЙ список из элементов исходного, выполнив следующие условия:
+# если элемент кратен двум, то разделить его на 4, если не кратен, то умножить на два.
+# a = [11, 22, 33, 44]
+# z = set(a)
+# for i in z:
+#     c = int(i) % 2
+#     if c > 0:
+#         print(i / 4)
+#     else:
+#         print(i * 2)
+
